@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header, nav, section, footer {
+    padding: 20px;
+    background-color: #e5d9f2;
+    margin-bottom: 0px;
+    display: block; /* セクションをブロック要素にする */
+}
+
+.nav {
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: color 0.3s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 24%; /* 画面の横幅の25%を占めるように設定 */
+    box-sizing: border-box; /* パディングとボーダーを要素の幅に含める */
+    text-align: center; /* テキストを中央に配置 */
+}
+
+.nav:hover {
+    color: #fff7d1;
+}
+
+
+.about-info {
+    text-align: left;
+}
+
+.button1 {
+    padding: 4px 8px;
+    background-color: #668ba4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed; /* ボタンを固定位置に配置 */
+    bottom: 20px; /* 下部からの距離 */
+    right: 20px; /* 右端からの距離 */
+    z-index: 999; /* 他の要素の上に表示するためのz-index値 */
+}
+.button1:hover {
+    background-color: #0056b3;
+}
+
+.about-info {
+    display: flex;
+}
+
+.about-info img {
+    border-radius: 100%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+.info1 {
+    background-color: #fff7d1;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+
+.info {
+    background-color: #fff7d1;
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+.infoEdu {
+    background-color: #fff7d1;
+    padding: 20px;
+    margin-left: auto; /* 左側のマージンを自動に設定 */
+    margin-right: auto; /* 右側のマージンを自動に設定 */
+    width: fit-content; /* コンテンツの幅に合わせる */
+    border-radius: 50px;
+}
+
+
+.icons {
+    margin-top: 10px;
+}
+
+.icons a {
+    margin-right: 10px;
+}
+
+.back-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.icons img {
+    width: 50px;
+    height: 50px;
+}
+
+.icons a {
+    text-decoration: none; /* リンクの下線を非表示にする */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between; /* セクション内の要素を左右に配置 */
+}
+
+.programming, .ms, .languages {
+    width: 45%; /* プログラミングと言語のセクションの幅 */
+}
+
+h3 {
+    margin-top: 0; /* 見出しの上の余白を削除 */
+}
+
+canvas {
+    margin-bottom: 10px; /* グラフの下の余白を追加 */
+}
+.skills-container {
+    display: flex;
+    justify-content: space-between; /* セクション内の要素を左右に配置 */
+    flex-wrap: wrap; /* 一行に収まらない場合は折り返す */
+}
+
+#programming, #microsoft, #languages {
+    display: flex;
+    flex-wrap: wrap; /* グリッドのように要素を折り返す */
+    justify-content: center; /* 要素を中央に配置 */
+}
+#programming, #microsoft, #languages, #club, #achievement, #work, #volunteer {
+    margin-bottom: 20px; /* 四角の周りに余白を追加 */
+}
+.info h3 {
+    width: 100%; /* h3要素を一行に表示 */
+    text-align: center; /* テキストを中央揃え */
+    margin-bottom: 10px; /* h3要素の下に余白を追加 */
+}
+.info ul {
+    list-style-type: none; /* リストのマーカーを削除 */
+    padding: 0; /* リストの余白を削除 */
+}
+
+.info ul li a {
+    text-decoration: none; /* リンクの下線を削除 */
+    color: inherit; /* 親要素の文字色を継承 */
+    transition: color 0.3s; /* カーソルが当たった際の色の変化を追加 */
+}
+
+.info ul li a:hover {
+    color: #e5d9f2; /* カーソルが当たった際の文字色を白色に設定 */
+}
+/* 経験セクションのスタイル */
+#experience {
+    background-color: #e5d9f2;
+    padding: 20px;
+    margin-bottom: 0px;
+    display: block;
+}
+
+.experience-category {
+    margin-bottom: 20px;
+}
+
+.experience-category h3 {
+    color: #668ba4;
+}
+
+.experience-category ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.experience-category ul li {
+    margin-bottom: 10px;
+}
+
+/* リンクのスタイル */
+.experience-category a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.experience-category a:hover {
+    color: white;
+}
+
+/* 戻るボタンのスタイル */
+.button1 {
+    padding: 4px 8px;
+    background-color: #668ba4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.button1:hover {
+    background-color: #0056b3;
+}
+.h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+footer {
+    text-align: center; /* テキストを中央に配置 */
+    padding: 20px; /* 上下左右に余白を追加 */
+    background-color: #fff7d1; /* フッターの背景色 */
+}

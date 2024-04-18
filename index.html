@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotomi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="skillsChart.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="nav" onclick="scrollToSection('about')">About Me</a>
+            <a class="nav" onclick="scrollToSection('skills')">Skills</a>
+            <a class="nav" onclick="scrollToSection('education')">Education</a>
+            <a class="nav" onclick="scrollToSection('experience')">Experience</a>
+        </nav>
+    </header>
+    
+    <section class="about" id="about">
+        <h2 class="h2">About ME</h2>
+        <div class="about-info">
+            <img id="aboutImage" src="" alt="Kotomi's Image">
+            <div class="info1">
+                <p><strong>姓名:</strong> 吉元琴美 Yoshimoto Kotomi</p>
+                <p><strong>出生年月日:</strong> 2004/01/06</p>
+                <p><strong>出生地:</strong> 日本 熊本縣</p>
+                <p><strong>學校:</strong> 中原大學 商學院 資訊管理學系</p>
+                <p><strong>slogan:</strong>不要從明天開始努力，只”今天“努力。
+                <p><strong>興趣:</strong> 聽音樂、看電影、吃東西</p>
+
+                <p><strong>聯絡方式:</strong></p>
+                <div class="icons">
+                    <a href="mailto:kotomi0106tw@gmail.com">
+                        <img src="ICONimg/gmail_icon.png" alt="Gmail">
+                    </a>
+                    <a href="https://www.instagram.com/kotomiee" target="_blank">
+                        <img src="ICONimg/instagram_icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/Yoshimoto.Kotomi" target="_blank">
+                        <img src="ICONimg/facebook_icon.png" alt="Facebook">
+                    </a>
+                    <a href="https://line.me/ti/p/~kotomiyoshimoto" target="_blank">
+                        <img src="ICONimg/line_icon.png" alt="Line">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button class="button1" onclick="scrollToTop()">BACK</button>
+    </section>
+
+    <section id="skills">
+        <h2 class="h2">Skills</h2>
+        <div class="info" id="programming" class="skills-container">
+            <h3>Programming</h3>
+        </div>
+        <div class="info" id="microsoft" class="skills-container">
+            <h3>Microsoft</h3>
+        </div>
+        <div class="info" id="languages" class="skills-container">
+            <h3>Languages</h3>
+        </div>
+        <button class="button1" onclick="scrollToTop()">BACK</button>
+    </section> 
+  
+
+    <section id="education">
+        <h2 class="h2">Education</h2>
+        <div class="info">
+            <ul>
+                <li>2022/09 - </li>
+                <li><a href="https://im.cycu.edu.tw/">中原大学 資訊管理学系</a></li>
+                <li>2021/04 - 2022/03 </li>
+                <li><a href="https://kou.oita-ed.jp/hita/">大分県立日田高等学校（日本）</a></li>
+                <li>2019/04 - 2021/03 </li>
+                <li><a href="https://seiseiko-hs.ed.jp/">熊本県立濟濟黌高級中学校（日本）</a></li>
+                <li>2016/04 - 2019/03 </li>
+                <li><a href="https://tyu.oita-ed.jp/hita/toubu/">日田市立東部中学校（日本）</a></li>
+                <li>2010/04 - 2016/03 </li>
+                <li><a href="https://syou.oita-ed.jp/hita/keirin/">日田市立桂林小学校（日本）</a></li>            
+            </ul>
+        </div>
+        <button class="button1" onclick="scrollToTop()">BACK</button>
+    </section>
+
+    <section id="experience">
+        <h2 class="h2">Experience</h2>
+        
+        <div class="info" id="club" class="experience-category">
+            <h3>社團經驗</h3>
+            <ul>
+                <li>網球社</li>
+                <li>弦樂社(小提琴)</li>
+                <li>JRC日本紅十字社</li>
+                <li>茶道社(高中)</li>
+                <li>化學社 社長(高中)</li>
+                <li>国際學生聯誼會 執行秘書&攝影長(中原大學)</li>
+            </ul>
+        </div>
+        
+        <div class="info" id="achievement" class="experience-category">
+            <h3>獎項</h3>
+            <ul>
+                <li>咸宜園世界遺產登錄推廣小學生作文比賽 最優秀獎</li>
+                <li>咸宜園世界遺產登錄推廣小學生作文比賽 最優秀獎</li>
+                <li>高圓宮杯第70屆全日本國中英語辯論比賽 日田區 預選</li>
+                <li>第27屆FM大分國中學英語背誦比賽 入圍</li>
+                <li>第71屆熊本縣高中生理科研究發表大賽 最優秀獎</li>
+                <li>九州高中生理科研究發表大賽 長崎大賽 優秀獎</li>
+                <li>管理學期末報告 班級團體獎第一名</li>
+                <li>111學年度英語讀者劇場比賽 班級團體獎第二名</li>
+                <li>113年全國大專校院學生社團評選暨觀摩活動 初選</li>
+            </ul>
+        </div>
+        
+        <div class="info" id="work" class="experience-category">
+            <h3>工讀及實習經驗</h3>
+            <ul>
+                <h4>日本</h4>
+                <li>婦產科職員（2days intern）</li>
+                <li>雜貨店員（3days intern）</li>
+                <li>藏壽司（工讀）</li>
+                <li>酒吧（工讀）</li>
+                <li>藥妝店（工讀）</li>
+                <h4>台灣</h4>
+                <li>校內工讀（代表學校參加中央訪視）</li>
+                <li>校內工讀（國際暨兩岸教育處）</li>
+            </ul>
+        </div>
+        
+        <div class="info" id="volunteer" class="experience-category">
+            <h3>志願活動經驗</h3>
+            <ul>
+                <li>向熊本地震災民、日田大雨災民及東日本大地震災民分發聖誕禮物及募捐</li>
+                <li>再春館製藥所一本之木財團主辦 一本之木計畫支援人員</li>
+                <li>熊本紅十字醫院國際交流會</li>
+                <li>熊本城馬拉松 交通整理員</li>
+                <li>財團法人伊甸社會福利基金會志工</li>
+                <li>中原全大運2023 志工</li>
+            </ul>
+        </div>
+    
+        <button class="button1" onclick="scrollToTop()">BACK</button>
+    </section>
+
+    <footer>
+        <p>Copyright © 2024 Kotomi. All rights reserved.</p>
+    </footer>
+    <script src="skillsChart.js" defer></script>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToTop() {
+            document.body.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Function to randomly set the about section image
+        function setAboutImage() {
+            var images = ['img_k1.jpg', 'img_k2.jpg', 'img_k3.jpg'];
+            var randomIndex = Math.floor(Math.random() * images.length);
+            var imageUrl = "MEimg/" + images[randomIndex]; 
+            document.getElementById('aboutImage').src = imageUrl;
+        }
+
+        // Call the function to set the about section image on page load
+        window.onload = setAboutImage;
+    </script>
+
+</body>
+</html>
