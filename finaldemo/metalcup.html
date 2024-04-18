@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>不鏽鋼杯</title>
+  <link rel="stylesheet" href="asset/css/product.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+      <img class="logo" src="asset/image/logo.png" alt="">
+  </header>
+
+  <nav>
+    <a href="index.html">首頁</a>
+    /
+    <a href="login.html">登入</a>
+    /
+    <a href="cart.html">購物車</a>
+    /
+    <a href="comment.html">回饋區</a>
+    /
+    <a href="vip.html">會員資料</a>
+    /
+    <a href="history_buy.html">消費紀錄</a>
+    /
+    <a href="history_comment.html">評論紀錄</a>
+  </nav>
+
+  <div class="product">
+    <img src="asset/image/metalcup.png" alt="">
+    <h2 class="name">H仔不鏽鋼吸管杯 500ml - 極簡白</h2>
+    <p class="price">商品價格: NT$800</p>
+    <label for="quantity">數量:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
+    <button type="submit">加入購物車</button>
+    <a href="cart.html"><button type="submit">直接結帳</button></a>  
+  </div>
+
+  <div class="tit">評論區</div>
+  
+  <div class="review">
+    <div class="rating">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    </div>
+    <div class="comment">
+      <h3>g*****s：</h3>
+      <p>這個商品真的很棒！我非常滿意。</p>
+    </div>
+  </div>
+  
+  <div class="review">
+    <div class="rating">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    </div>
+    <div class="comment">
+      <h3>n*****g：</h3>
+      <p>商品耐用又好看！</p>
+    </div>
+  </div>
+
+  <div class="review">
+    <div class="rating">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    </div>
+    <div class="comment">
+      <h3>d*****w：</h3>
+      <p>CP值超高！不買真的會出事啦</p>
+    </div>
+  </div>
+
+  <footer>
+    <h5>@2023 多媒體 Final Exam</h5>
+  </footer>
+
+  <script>
+    function addToCart() {
+      const productName = document.querySelector('.product-name').innerText;
+      const productPrice = document.getElementById('price').innerText;
+      const quantity = document.getElementById('quantity').value;
+
+      // 在這裡將商品資訊添加至購物籃，這裡只是個範例，實際應用需透過後端處理
+      console.log(`已將 ${quantity} 個 ${productName} 加入購物籃，每個價格為 $${productPrice}`);
+    }
+  </script>
+
+</body>
+</html>

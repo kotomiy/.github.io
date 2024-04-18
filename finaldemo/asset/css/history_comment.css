@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    max-width: 1256px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+}
+
+.logo {
+    max-width: 100%;
+    margin: 0%;
+}
+
+nav {
+    background-color: #D6CCC2;
+    text-align: right;
+    font-family: Noto Serif TC;
+}
+
+nav a {
+    color: black;
+    padding: 20px 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: gray;
+    color: white;
+}
+
+body {
+    font-family: Noto Serif TC;
+    background-color: #F5EBE0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.tit {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px;
+    font-weight: bold;
+}
+
+img {
+    width: 10%;
+    height: 10%;
+}
+
+.review {
+    border: 1px solid gray;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+}
+
+.rating {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: rgb(239, 239, 0);
+}
+
+.comment {
+    font-size: 100%;
+}
+
+footer {
+    background-color: #D6CCC2;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: Noto Serif TC;
+}

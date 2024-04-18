@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出事了阿杯</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="asset/image/logo.png" alt="">
+    </header>
+    
+    
+    <nav>
+      <a href="index.html">首頁</a>
+      /
+      <a href="login.html">登入</a>
+      /
+      <a href="cart.html">購物車</a>
+      /
+      <a href="comment.html">回饋區</a>
+      /
+      <a href="vip.html">會員資料</a>
+      /
+      <a href="history_buy.html">消費紀錄</a>
+      /
+      <a href="history_comment.html">評論紀錄</a>
+    </nav>
+
+    <div class="tit">熱門商品<hr></div>
+    
+    <div class="slideshow">
+      <a href="ecocup.html"><img class="mySlides" src="asset/image/ecocup.webp"></a>
+      <a href="glasscup.html"><img class="mySlides" src="asset/image/glasscup.webp"></a>
+      <a href="cartooncup.html"><img class="mySlides" src="asset/image/cartooncup.webp"></a>
+      <a href="metalcup.html"><img class="mySlides" src="asset/image/metalcup.png"></a>
+      <!-- 添加更多圖片 -->
+    </div>
+
+    <script>
+      // JavaScript
+      let slideIndex = 0;
+      const slides = document.getElementsByClassName("mySlides");
+  
+      function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1; }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // 切換圖片的時間間隔（這裡設定為2秒）
+      }
+  
+      showSlides(); // 啟動圖片輪播
+    </script>
+
+    <div class="tit">全部商品<hr></div>
+
+    <main>
+        <section class="card">
+          <p>環保杯</p>
+          <a href="ecocup.html"><img src="asset/image/ecocup.webp" /></a>
+        </section>
+  
+        <section class="card">
+          <p>冰壩杯</p>
+          <a href="icecup.html"><img src="asset/image/icecup.jpg" /></a>
+        </section>
+
+        <section class="card">
+          <p>透明杯</p>
+          <a href="glasscup.html"><img src="asset/image/glasscup.webp" /></a>
+        </section>
+  
+        <section class="card">
+          <p>不鏽鋼</p>
+          <a href="metalcup.html"><img src="asset/image/metalcup.png" /></a>
+        </section>
+
+        <section class="card">
+          <p>卡通圖案杯</p>
+          <a href="cartooncup.html"><img src="asset/image/cartooncup.webp" /></a>
+        </section>
+  
+        <section class="card">
+          <p>提袋</p>
+          <a href="bag.html"><img src="asset/image/bag.webp" /></a>
+        </section>
+      </main>
+
+      <div class="tit">關於我們<hr></div>
+
+      <main>
+          <section class="card">
+            <img class="us" src="asset/image/tobyyyy.jpg" style="border-radius: 50%;"/>
+            <p>張偉宸</p>
+          </section>
+          <section class="card">
+            <img class="us" src="asset/image/Terryyyy.jpg" style="border-radius: 50%;"/>
+            <p>林禹劭</p>
+          </section>
+          <section class="card">
+            <img class="us" src="asset/image/hcc.jpg" style="border-radius: 50%;"/>
+            <p>黃煥喬</p>
+          </section>
+      </main>
+
+      <section class="card01">
+        <p>聯絡資訊</p>
+        <a href="https://line.me/tw/"><img class="icon" src="asset/image/line.png" alt=""></a>
+        <a href="https://www.facebook.com/?locale=zh_TW"><img class="icon" src="asset/image/facebook.png" alt=""></a>
+        <a href="https://www.instagram.com/"><img class="icon" src="asset/image/instagram.png" alt=""></a>
+      </section>
+
+      <footer>
+        <h5>@2023 多媒體 Final Exam</h5>
+      </footer>
+</body>
+</html>

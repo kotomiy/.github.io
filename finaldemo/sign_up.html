@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊</title>
+    <link rel="stylesheet" href="asset/css/sign_up.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="asset/image/logo.png" alt="">
+    </header>
+    
+    <nav>
+        <a href="index.html">首頁</a>
+        /
+        <a href="login.html">登入</a>
+        /
+        <a href="cart.html">購物車</a>
+        /
+        <a href="comment.html">回饋區</a>
+        /
+        <a href="vip.html">會員資料</a>
+        /
+        <a href="history_buy.html">消費紀錄</a>
+        /
+        <a href="history_comment.html">評論紀錄</a>
+    </nav>
+    
+    <div class="tit">加入會員<hr></div>
+    <form action="#" method="post" id="RegistrationForm">
+        <label for="username">使用者名稱：</label>
+        <input type="text" id="username" name="username" required>
+    
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="password">密碼：</label>
+        <input type="password" id="password" name="password" required>
+    
+        <label for="confirmPassword">確認密碼：</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <label for="gender">性別：</label>
+        <select name="3" id="gender">
+            <option value="man">男生</option>
+            <option value="woman">女生</option>
+            <option value="nosex">不透露</option>
+        </select>
+
+        <label for="birth">生日：</label>
+        <input type="date" id="birth" name="birth" required>
+
+        <label for="phone">手機：</label>
+        <input type="text" id="phone" name="phone" maxlength="10" required>
+        
+        <label for="area">地區：</label>
+        <select name="19" id="area">
+            <option value="Taipei">台北</option>
+            <option value="New_Taipei">新北</option>
+            <option value="Taoyuan">桃園</option>
+            <option value="Taichung">台中</option>
+            <option value="Tainan">台南</option>
+            <option value="Kaohsiung">高雄</option>
+            <option value="Keelung">基隆</option>
+            <option value="Hsinchu">新竹</option>
+            <option value="Miaoli">苗栗</option>
+            <option value="Changhua">彰化</option>
+            <option value="Nantou">南投</option>
+            <option value="Yunlin">雲林</option>
+            <option value="Chiayi">嘉義</option>
+            <option value="Yilan">宜蘭</option>
+            <option value="Hualien">花蓮</option>
+            <option value="Taitung">台東</option>
+            <option value="Penghu">澎湖</option>
+            <option value="Kinmen">金門</option>
+            <option value="Mazu">馬祖</option>
+        </select>
+        
+        <label for="confirmPassword">地址：</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+    
+        <button type="submit">註冊</button>
+    </form>
+    <footer>
+        <h5>@2023 多媒體 Final Exam</h5>
+      </footer>  
+</body>
+</html>

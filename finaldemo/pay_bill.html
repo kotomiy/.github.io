@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳</title>
+    <link rel="stylesheet" href="asset/css/pay_bill.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="asset/image/logo.png" alt="">
+    </header>
+  
+    <nav>
+        <a href="index.html">首頁</a>
+        /
+        <a href="login.html">登入</a>
+        /
+        <a href="cart.html">購物車</a>
+        /
+        <a href="comment.html">回饋區</a>
+        /
+        <a href="vip.html">會員資料</a>
+        /
+        <a href="history_buy.html">消費紀錄</a>
+        /
+        <a href="history_comment.html">評論紀錄</a>
+    </nav>
+
+    <div class="tit">結帳<hr></div>
+
+    <form action="/action_page.php" class="checkout-form">
+    
+        <div class="container">
+            <h3>訂單詳情</h3>
+            <img src="asset/image/ecocup.webp" alt="商品照片" width="200px" height="200px">
+            <div class="order-details">
+                <span class="price" style="color:black"></span>
+                <div class="product">
+                    <span class="price" style="color:black"></span>
+                    <h3>商品名稱<hr></h3>
+                    <p>總數量:</p>
+                    <p>總金額: <span class="price" style="color:black"><b>$</b></span></p>
+                </div>
+            </div>
+    
+            <h3>購買者資料<hr></h3>
+            <label for="fname">姓名</label>
+            <input type="text" name="firstname" placeholder="Full Name"><br>
+    
+            <label for="phone">連絡電話</label>
+            <input type="text"  name="phonenumber" placeholder="Phone Number"><br>
+    
+            <label for="email">電子郵件</label>
+            <input type="text" name="email" placeholder="Email"><br>
+          
+            
+            
+            <h3>取件門市<hr></h3>
+            <button><a href="pickup_store.html">按這裡點選</a></button>
+            
+            <h3><label for="waytopay">付款方式<hr></label></h3>
+            <input type="radio" name="pay" value="cash" id="cash">
+            <label for="cash">貨到付款</label>
+            <button>送出</button>
+            
+
+        </div>
+    </form>
+    
+    
+        
+    
+      
+</body>
+</html>

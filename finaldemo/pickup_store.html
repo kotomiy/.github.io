@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>取件門市</title>
+    <link rel="stylesheet" href="asset/css/pickup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="asset/image/logo.png" alt="">
+    </header>
+    
+    <nav>
+      <a href="index.html">首頁</a>
+      /
+      <a href="login.html">登入</a>
+      /
+      <a href="cart.html">購物車</a>
+      /
+      <a href="comment.html">回饋區</a>
+      /
+      <a href="vip.html">會員資料</a>
+      /
+      <a href="history_buy.html">消費紀錄</a>
+      /
+      <a href="history_comment.html">評論紀錄</a>
+    </nav>
+
+    <div class="tit">取件門市<hr></div>
+      <form action="#" method="post" id="Pickup_Store_Form">
+        <label for="Pickup_name">取件人姓名：</label>
+        <input type="text" id="Pickup_name" name="Pickup_name" required>
+    
+        <label for="phone">電話號碼：</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="Receiving_method">收貨方式：</label>
+        <select name="4" id="Receiving_method">
+          <option value="7-11">7-11店到店$60</option>
+          <option value="familymart">全家店到店$60</option>
+          <option value="post_office">郵局宅配$100</option>
+          <option value="no">免運</option>
+        </select>
+        
+        <label for="7-11_store">7-11店到店 店名+店號(沒有則填無)：</label>
+        <a href="https://emap.pcsc.com.tw/" target="_blank">門市查詢</a>
+        <input type="text" id="7-11_store" name="7-11_store" required>
+
+        <label for="7-11_store">全家店到店 服務代號(沒有則填無)：</label>
+        <a href="https://family.map.com.tw/ShopSpaceQuery/ShopSpaceQuery.asp" target="_blank">門市查詢</a>
+        <input type="text" id="7-11_store" name="7-11_store" required>
+
+        <label for="Home_delivery">宅配地址(沒有則填無)：</label>
+        <input type="text" id="Home_delivery" name="Home_delivery" required>
+    
+        <button type="submit">完成</button>
+      </form>  
+    </div>
+      <footer>
+        <h5>@2023 多媒體 Final Exam</h5>
+      </footer>  
+</body>
+</html>
